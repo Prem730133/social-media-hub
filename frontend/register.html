@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | SocialHub</title>
+
+    <link rel="stylesheet" href="css/register.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="register-container">
+
+        <!-- Left Side -->
+        <div class="register-left">
+
+            <h1>SocialHub</h1>
+
+            <h2>Create Your Account</h2>
+
+            <p>
+                Join our community and connect with friends, share your moments,
+                and explore amazing content from around the world.
+            </p>
+
+            <img src="images/register-banner.png" alt="Register">
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="register-right">
+
+            <form id="registerForm">
+
+                <h2>Sign Up</h2>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="name" placeholder="Full Name" required>
+                </div>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-at"></i>
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                </div>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-pen"></i>
+                    <textarea id="bio" rows="3" placeholder="Write a short bio..."></textarea>
+                </div>
+
+                <div class="input-box">
+                    <label><strong>Profile Picture</strong></label>
+                    <input type="file" id="profileImage" accept="image/*">
+                </div>
+
+                <button type="submit" class="register-btn">
+                    Create Account
+                </button>
+
+                <p class="login-link">
+                    Already have an account?
+                    <a href="login.html">Login</a>
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="js/register.js"></script>
+
+</body>
+
+</html>

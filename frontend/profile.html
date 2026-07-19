@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | SocialHub</title>
+
+    <link rel="stylesheet" href="css/profile.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            SocialHub
+        </div>
+
+        <ul>
+            <li><a href="feed.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+            <li><a href="create.html"><i class="fas fa-square-plus"></i> Create Post</a></li>
+            <li><a href="#" onclick="logout()"><i class="fas fa-right-from-bracket"></i> Logout</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Profile Header -->
+
+    <div class="profile-header"></div>
+
+    <!-- Profile Card -->
+
+    <section class="profile-card">
+
+        <img id="profileImage" src="images/profile.jpg" alt="Profile">
+
+        <h2 id="profileName">Premchandu Sankala</h2>
+
+        <p id="profileUsername">@premchandu</p>
+
+        <p id="profileBio" class="bio">
+            Full Stack Web Developer | Computer Science Student | Passionate about building modern web applications.
+        </p>
+
+        <div class="stats">
+
+            <div class="stat">
+                <h3 id="postCount">25</h3>
+                <span>Posts</span>
+            </div>
+
+            <div class="stat">
+                <h3 id="followerCount">520</h3>
+                <span>Followers</span>
+            </div>
+
+            <div class="stat">
+                <h3 id="followingCount">310</h3>
+                <span>Following</span>
+            </div>
+
+        </div>
+
+        <div class="buttons">
+
+            <button class="btn edit-btn">
+                <i class="fas fa-user-edit"></i>
+                Edit Profile
+            </button>
+
+            <button class="btn logout-btn" onclick="logout()">
+                <i class="fas fa-sign-out-alt"></i>
+                Logout
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Edit Profile -->
+
+    <section class="edit-profile">
+
+        <h3>Edit Profile</h3>
+
+        <form id="editProfileForm" enctype="multipart/form-data">
+
+            <div class="input-group">
+
+                <label>Full Name</label>
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Enter your full name">
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Bio</label>
+
+                <textarea
+                    name="bio"
+                    rows="4"
+                    placeholder="Tell us about yourself"></textarea>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Profile Picture</label>
+
+                <input
+                    type="file"
+                    id="imageInput"
+                    name="profileImage"
+                    accept="image/*">
+
+            </div>
+
+            <button type="submit" class="save-btn">
+                Update Profile
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- User Posts -->
+
+    <section class="posts">
+
+        <h3>My Posts</h3>
+
+        <div class="post-grid">
+
+            <div class="post">
+
+                <img src="images/post1.jpg" alt="">
+
+                <div class="post-content">
+
+                    <p>Enjoying a beautiful sunset with friends 🌅</p>
+
+                </div>
+
+            </div>
+
+            <div class="post">
+
+                <img src="images/post2.jpg" alt="">
+
+                <div class="post-content">
+
+                    <p>Weekend road trip adventure 🚗</p>
+
+                </div>
+
+            </div>
+
+            <div class="post">
+
+                <img src="images/post3.jpg" alt="">
+
+                <div class="post-content">
+
+                    <p>Learning Full Stack Development 💻</p>
+
+                </div>
+
+            </div>
+
+            <div class="post">
+
+                <img src="images/post4.jpg" alt="">
+
+                <div class="post-content">
+
+                    <p>Nature photography is my favorite hobby 📸</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="js/profile.js"></script>
+
+</body>
+
+</html>

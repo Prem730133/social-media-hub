@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Platform</title>
+    <script>
+        window.location.href = "feed.html";
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>SocialHub</h2>
+        </div>
+
+        <div class="profile">
+
+            <img src="images/profile.jpg" alt="Profile">
+
+            <h3>Premchandu</h3>
+
+            <p>@prem</p>
+
+            <div class="stats">
+
+                <div>
+                    <h4>25</h4>
+                    <span>Posts</span>
+                </div>
+
+                <div>
+                    <h4>520</h4>
+                    <span>Followers</span>
+                </div>
+
+                <div>
+                    <h4>315</h4>
+                    <span>Following</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <ul class="menu">
+            <li><a href="feed.html"><i class="fas fa-house"></i> Home</a></li>
+            <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+            <li><a href="create.html"><i class="fas fa-square-plus"></i> Create Post</a></li>
+            <li><a href="login.html"><i class="fas fa-right-to-bracket"></i> Login</a></li>
+            <li><a href="register.html"><i class="fas fa-user-plus"></i> Register</a></li>
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Navbar -->
+
+        <header class="navbar">
+
+            <div class="search">
+
+                <input type="text" placeholder="Search users...">
+
+            </div>
+
+            <div class="nav-icons">
+
+                <i class="fas fa-bell"></i>
+
+                <i class="fas fa-envelope"></i>
+
+                <button>Create Post</button>
+
+            </div>
+
+        </header>
+
+        <!-- Stories -->
+
+        <section class="stories">
+
+            <h2>Stories</h2>
+
+            <div class="story-list">
+
+                <div class="story">
+                    <img src="images/user1.jpg">
+                    <span>You</span>
+                </div>
+
+                <div class="story">
+                    <img src="images/user2.jpg">
+                    <span>Rahul</span>
+                </div>
+
+                <div class="story">
+                    <img src="images/user3.jpg">
+                    <span>Priya</span>
+                </div>
+
+                <div class="story">
+                    <img src="images/user4.jpg">
+                    <span>Arjun</span>
+                </div>
+
+                <div class="story">
+                    <img src="images/user5.jpg">
+                    <span>Anjali</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Feed -->
+
+        <section class="feed">
+
+            <div class="post">
+
+                <div class="post-header">
+
+                    <img src="images/user2.jpg">
+
+                    <h3>Rahul Sharma</h3>
+
+                </div>
+
+                <img class="post-image" src="images/post1.jpg">
+
+                <div class="actions">
+
+                    <i class="far fa-heart"></i>
+
+                    <i class="far fa-comment"></i>
+
+                    <i class="fas fa-share"></i>
+
+                </div>
+
+                <p><b>150 Likes</b></p>
+
+                <p>Enjoying my vacation 🌴</p>
+
+            </div>
+
+            <div class="post">
+
+                <div class="post-header">
+
+                    <img src="images/user3.jpg">
+
+                    <h3>Priya Singh</h3>
+
+                </div>
+
+                <img class="post-image" src="images/post2.jpg">
+
+                <div class="actions">
+
+                    <i class="far fa-heart"></i>
+
+                    <i class="far fa-comment"></i>
+
+                    <i class="fas fa-share"></i>
+
+                </div>
+
+                <p><b>245 Likes</b></p>
+
+                <p>Nature is beautiful ❤️</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

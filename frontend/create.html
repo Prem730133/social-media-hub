@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post | SocialHub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>SocialHub</h2>
+        </div>
+
+        <ul class="menu">
+            <li><a href="feed.html"><i class="fas fa-house"></i> Home</a></li>
+            <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+            <li><a href="create.html" class="active"><i class="fas fa-square-plus"></i> Create Post</a></li>
+            <li><a href="#" onclick="logout()"><i class="fas fa-right-from-bracket"></i> Logout</a></li>
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <div class="create-post-card">
+
+            <h2><i class="fas fa-camera"></i> Create New Post</h2>
+
+            <form id="createPostForm">
+
+                <div class="user-info">
+
+                    <img src="images/profile.jpg" alt="Profile">
+
+                    <div>
+                        <h3>Premchandu Sankala</h3>
+                        <p>Share your thoughts with everyone.</p>
+                    </div>
+
+                </div>
+
+                <textarea
+                    id="caption"
+                    placeholder="What's on your mind?"
+                    rows="6"
+                    required></textarea>
+
+                <div class="upload-box">
+
+                    <label for="postImage">
+                        <i class="fas fa-image"></i>
+                        Choose Image
+                    </label>
+
+                    <input
+                        type="file"
+                        id="postImage"
+                        accept="image/*"
+                        hidden>
+
+                </div>
+
+                <div class="image-preview">
+
+                    <img
+                        id="previewImage"
+                        src=""
+                        alt="Preview"
+                        style="display:none;">
+
+                </div>
+
+                <button type="submit" class="post-btn">
+
+                    <i class="fas fa-paper-plane"></i>
+
+                    Publish Post
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/createPost.js"></script>
+
+<script>
+const imageInput = document.getElementById("postImage");
+const preview = document.getElementById("previewImage");
+
+imageInput.addEventListener("change", function () {
+
+    const file = this.files[0];
+
+    if(file){
+
+        preview.src = URL.createObjectURL(file);
+
+        preview.style.display = "block";
+
+    }
+
+});
+</script>
+
+</body>
+
+</html>
